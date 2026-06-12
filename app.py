@@ -27,7 +27,7 @@ def get_base_path():
 
 @app.route('/')
 def health():
-    return render_template('index.html')
+    return jsonify({"status": "ok", "message": "API rodando"})
 
 
 @app.route('/api/list', methods=['GET'])

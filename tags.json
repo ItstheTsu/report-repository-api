@@ -438,8 +438,38 @@
         {
             "id": 88,
             "name": "Unimed Sorocaba - 4328",
-            "category": 2
+            "category": 11
+        },
+        {
+            "id": 89,
+            "name": "Remed - 5757",
+            "category": 11
+        },
+        {
+            "id": 90,
+            "name": "Santa Catarina - 2771",
+            "category": 11
+        },
+        {
+            "id": 91,
+            "name": "CFOP",
+            "category": 12
+        },
+        {
+            "id": 92,
+            "name": "Data de Emissão",
+            "category": 4
+        },
+        {
+            "id": 93,
+            "name": "Hora da Compra",
+            "category": 4
+        },
+        {
+            "id": 94,
+            "name": "Status da Compra",
+            "category": 4
         }
     ],
-    "last_id": 88
+    "last_id": 94
 }

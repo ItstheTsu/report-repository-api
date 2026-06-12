@@ -43,7 +43,11 @@
         {
             "id": 11,
             "name": "Clientes VSM"
+        },
+        {
+            "id": 12,
+            "name": "Fiscal"
         }
     ],
-    "last_id": 11
+    "last_id": 12
 }
