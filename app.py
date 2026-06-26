@@ -14,7 +14,7 @@ CORS(app, resources={r"/api/*": {"origins": "*"}}, expose_headers=["X-Report-Pat
      allow_headers=["Content-Type", "X-Report-Path"])
 load_dotenv()
 
-DEFAULT_PATH = r"\\172.20.75.5\suporte\Bruno_Terribile\Relatórios Personalizados"
+DEFAULT_PATH = r"C:\Workspace\Report Repository\Relatórios personalizados"
 TAGS_JSON_PATH = os.path.join(os.path.dirname(__file__), 'tags.json')
 CATEGORIES_JSON_PATH = os.path.join(os.path.dirname(__file__), 'categories.json')
 

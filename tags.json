@@ -469,7 +469,12 @@
             "id": 94,
             "name": "Status da Compra",
             "category": 4
+        },
+        {
+            "id": 95,
+            "name": "contas a pagar",
+            "category": 9
         }
     ],
-    "last_id": 94
+    "last_id": 95
 }
