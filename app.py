@@ -28,7 +28,7 @@ def get_base_path():
     header_path = request.headers.get('X-Report-Path')
     if header_path and os.path.exists(header_path):
         return header_path
-    return DEFAULT_PATH_REDE
+    return DEFAULT_PATH
 
 
 @app.route('/')
@@ -91,6 +91,7 @@ def listar():
                 "hasXml": xml_file is not None,
                 "sqls": sqls,
                 "folderPath": path_abs,
+                "networkPath": os.path.join(DEFAULT_PATH_REDE, folder),
                 "description": description,
                 "tags": tags
             })
