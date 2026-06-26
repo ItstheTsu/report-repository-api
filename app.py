@@ -20,6 +20,7 @@ CORS(
 )
 
 DEFAULT_PATH = r"C:\Workspace\Report Repository\Relatórios personalizados"
+DEFAULT_PATH_REDE = r"\\172.20.75.5\suporte\Allan\relatórios personalizados"
 TAGS_JSON_PATH = os.path.join(os.path.dirname(__file__), 'tags.json')
 CATEGORIES_JSON_PATH = os.path.join(os.path.dirname(__file__), 'categories.json')
 
@@ -27,7 +28,7 @@ def get_base_path():
     header_path = request.headers.get('X-Report-Path')
     if header_path and os.path.exists(header_path):
         return header_path
-    return DEFAULT_PATH
+    return DEFAULT_PATH_REDE
 
 
 @app.route('/')
