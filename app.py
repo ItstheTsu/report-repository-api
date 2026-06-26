@@ -10,9 +10,14 @@ import shutil
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "*"}}, expose_headers=["X-Report-Path"],
-     allow_headers=["Content-Type", "X-Report-Path"])
-load_dotenv()
+CORS(
+    app,
+    resources={r"/api/*": {
+        "origins": "https://report-repository.mysynth.com.br"
+    }},
+    allow_headers=["Content-Type", "X-Report-Path"],
+    expose_headers=["X-Report-Path"]
+)
 
 DEFAULT_PATH = r"C:\Workspace\Report Repository\Relatórios personalizados"
 TAGS_JSON_PATH = os.path.join(os.path.dirname(__file__), 'tags.json')
